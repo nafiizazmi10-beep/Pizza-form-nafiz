@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link rel="shortcut icon" href="images/pizza.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+     <header>
+        <h1>Pizza Order Form</h1>
+        <p><b>Welcome to our pizza ordering service! Please fill out the form below to place your order.</b></p>
+        <nav>
+            <a href="#menu" style="text-decoration: none;">Menu</a>|
+            <a href="#order" style="text-decoration: none;">Order</a>|
+            <a href="#about" style="text-decoration: none;">About Us</a>|
+            <a href="#contact" style="text-decoration: none;">Contact Us</a>|
+        </nav>
+    </header>
+
+    <!-- Promo Section -->
+    <section>
+        <h3>Special Offers</h3>
+        <img src="images/Poster.jpg" alt="Pizza Image" width="300">
+        <p><mark>20% off </mark>on all pizzas this week!</p>
+
+        <ul>
+            <li>Buy one pizza, get one free on Tuesdays.</li>
+            <li>Free delivery for orders over $30.</li>
+        </ul>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h3>Our Menu</h3>
+        <p>Check out our delicious pizza options!</p>
+        <table border="1">
+            <tr>
+                <th>Pizza</th>
+                <th>Price</th>
+                <th>Size</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Margherita</td>
+                <td>$12.99</td>
+                <td>Medium</td>
+                <td>A classic pizza with tomato sauce and mozzarella cheese.</td>
+            </tr>
+            <tr>
+                <td>Pepperoni</td>
+                <td>$14.99</td>
+                <td>Large</td>
+                <td>A delicious pizza topped with pepperoni slices.</td>
+            </tr>
+            <tr>
+                <td>Tandoori</td>
+                <td>$10.99</td>
+                <td>Small</td>
+                <td>A spicy pizza with tandoori sauce and grilled chicken.</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- section order -->
+     <section id="order">
+        <h3>Order Your Pizza</h3>
+        <form action="https://formspree.io/f/mwleedll" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="pemesan" name="pemesan" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+        
+            
+            <label for="size">Size:</label>
+            <select id="size" name="size" required>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select><br><br>
+
+            <label for="toppings">Toppings:</label>
+            <br><input type="checkbox" name="toppings" id="toppings" value="Pepper" > Pepper
+            <br><input type="checkbox" name="toppings" id="toppings" value="Cheese" > Cheese
+            <br><input type="checkbox" name="toppings" id="toppings" value="Mushroom" > Mushroom
+            <br><input type="checkbox" name="toppings" id="toppings" value="Onion" > Onion
+            <br><input type="checkbox" name="toppings" id="toppings" value="Olives" > Olives
+            <br><input type="checkbox" name="toppings" id="toppings" value="Pineapple" > Pineapple
+            
+
+            <label for="Sauce">Sauce:</label><br>
+            <br><input type="radio" name="Sauce" value="tomato" checked> Tomato
+            <br><input type="radio" name="Sauce" value="alfredo"> Alfredo
+            <br><input type="radio" name="Sauce" value="barbecue"> Barbecue
+
+            <label for="Notes">Notes:</label><br>
+            <br><textarea name="Notes" id="Notes" rows="4" cols="50" placeholder="Any special requests?"></textarea><br><br>
+            <button type="submit">Send Order</button>
+        </form>
+     </section>
+
+     <!-- section contact -->
+     <section id="contact">
+        <h3>Contact Us</h3>
+        <p>If you have any questions or feedback, feel free to reach out to us!</p>
+        <address>
+            <p><strong>Our Location:</strong> 123 Pizza Street, Foodville</p>
+            <p><strong>Phone:</strong> <a href="https://wa.me/6281290863344?text=Halo%20Saya%20Mau%20Pesan%20Pizza" target="_blank">Chat with us on WhatsApp</a></p>
+            <p><strong>Email:</strong> <a href="mailto:nafiizazmi10@gmail.com">nafiizazmi10@gmail.com</a></p>
+        </address>
+     </section>
+
+     <!-- footer -->
+     <footer>
+        <p>&copy; 2026 Pizza Shop. All rights reserved.</p>
+     </footer>
+</body>
+</html>
